@@ -1,5 +1,7 @@
 import React from 'react';
 import { Heart, PlayCircle } from 'lucide-react';
+import mahakumbhImage from './images/mahakumbh.jpeg';
+   
 
 const videos = [
   {
@@ -62,25 +64,25 @@ function App() {
 
         {/* Donation Section */}
         <section className="bg-white rounded-lg shadow-xl p-8 max-w-2xl mx-auto">
-          <div className="text-center">
-            <Heart className="w-12 h-12 text-red-500 mx-auto mb-4" />
-            <h2 className="text-2xl font-bold mb-4">Support Mahakumbh</h2>
-            <p className="text-gray-600 mb-6">
-              Support the Mahakumbh 2024 gathering by donating to the cause.Starting with 10 Rs
-            </p>
-          </div>
+  <div className="text-center">
+    <Heart className="w-12 h-12 text-red-500 mx-auto mb-4" />
+    <h2 className="text-2xl font-bold mb-4">Support Mahakumbh</h2>
+    <p className="text-gray-600 mb-6">
+      Support the Mahakumbh 2024 gathering by donating to the cause. Starting with 10 Rs
+    </p>
+  </div>
 
-          <div className="flex flex-col items-center">
-            <img
-              src="./images/mahakumbh.jpeg"
-              alt="10 Rs Donation QR Code"
-              className="w-48 h-48 object-cover mb-4 rounded-lg shadow-md"
-            />
-            <button className="bg-orange-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-700 transition-colors">
-              Donate Now for Seva
-            </button>
-          </div>
-        </section>
+  <div className="flex flex-col items-center">
+    <img
+      src={mahakumbhImage}
+      alt="10 Rs Donation QR Code"
+      className="w-48 h-48 object-cover mb-4 rounded-lg shadow-md"
+    />
+    <button className="bg-orange-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-700 transition-colors">
+      Donate Now for Seva
+    </button>
+  </div>
+</section>
       </main>
 
       {/* Video Modal */}
